@@ -1,0 +1,10 @@
+.Header {
+  height: 156px;
+  background: url("../../images/bg-header-mobile.svg") no-repeat center;
+  background-color: var(--medium-blue-color);
+
+  @media only screen and (min-width: 375px) {
+    background: url("../../images/bg-header-desktop.svg") no-repeat center;
+    background-color: var(--medium-blue-color);
+  }
+}
