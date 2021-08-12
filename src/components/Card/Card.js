@@ -1,10 +1,7 @@
 import "./Card.scss";
 
 const Card = (props) => {
- 
-
   return (
-    
     <li key={props.id} className="Card">
       <div className="image">
         <img src={props.logo} alt={`${props.company} logo`} />
@@ -22,27 +19,11 @@ const Card = (props) => {
       </div>
       <ul className="tags">
         {props.tags.map((tag, index) => {
-          return <li key={index} 
-          // onClick={()=> props.filterTag(tag.key, tag.value)}
-          >
-            {Object.keys(tag).map((m) => {
-               // tag is an object => but we are checking if it going to return an array or not
-            if (Array.isArray(tag[m])) {
-              // console.log(tag[m]); // tag[m] returns arrays of values ["javascript"]
-              //n represent each element in the array => li
-              return tag[m].map((n) => (
-                <li onClick={() => props.filterTag(m, n)}>{n}</li>
-                
-              ));
-              
-            } else {
-              return (
-                <span onClick={() => props.filterTag(m, tag[m])}>
-                  {tag[m]}
-                </span>
-              );
-            }
-          })}</li>;
+          return (
+            <li onClick={props.handleClick} key={index} data-tag={tag}>
+              {tag}
+            </li>
+          );
         })}
       </ul>
     </li>
