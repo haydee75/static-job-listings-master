@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static-job-listings-master/static/css/main.2b17159a.chunk.css",
-    "main.js": "/static-job-listings-master/static/js/main.ee78e773.chunk.js",
-    "main.js.map": "/static-job-listings-master/static/js/main.ee78e773.chunk.js.map",
+    "main.css": "/static-job-listings-master/static/css/main.e3aedbd4.chunk.css",
+    "main.js": "/static-job-listings-master/static/js/main.9b1352db.chunk.js",
+    "main.js.map": "/static-job-listings-master/static/js/main.9b1352db.chunk.js.map",
     "runtime-main.js": "/static-job-listings-master/static/js/runtime-main.7e0d065e.js",
     "runtime-main.js.map": "/static-job-listings-master/static/js/runtime-main.7e0d065e.js.map",
     "static/js/2.6ad3b4d8.chunk.js": "/static-job-listings-master/static/js/2.6ad3b4d8.chunk.js",
@@ -10,14 +10,15 @@
     "static/js/3.9fe12a7d.chunk.js": "/static-job-listings-master/static/js/3.9fe12a7d.chunk.js",
     "static/js/3.9fe12a7d.chunk.js.map": "/static-job-listings-master/static/js/3.9fe12a7d.chunk.js.map",
     "index.html": "/static-job-listings-master/index.html",
-    "static/css/main.2b17159a.chunk.css.map": "/static-job-listings-master/static/css/main.2b17159a.chunk.css.map",
+    "static/css/main.e3aedbd4.chunk.css.map": "/static-job-listings-master/static/css/main.e3aedbd4.chunk.css.map",
     "static/js/2.6ad3b4d8.chunk.js.LICENSE.txt": "/static-job-listings-master/static/js/2.6ad3b4d8.chunk.js.LICENSE.txt",
-    "static/media/Header.scss": "/static-job-listings-master/static/media/bg-header-mobile.9cb13612.svg"
+    "static/media/Header.scss": "/static-job-listings-master/static/media/bg-header-mobile.9cb13612.svg",
+    "static/media/CardList.scss": "/static-job-listings-master/static/media/cross-icon.f49849a6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7e0d065e.js",
     "static/js/2.6ad3b4d8.chunk.js",
-    "static/css/main.2b17159a.chunk.css",
-    "static/js/main.ee78e773.chunk.js"
+    "static/css/main.e3aedbd4.chunk.css",
+    "static/js/main.9b1352db.chunk.js"
   ]
 }
