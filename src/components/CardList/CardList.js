@@ -41,17 +41,33 @@ const CardList = (props) => {
     setDatas(newArr);
   };
 
+  const clearFilter = () => {
+    setListTags([]);
+    setDatas(initialDatas);
+  };
+
   return (
     <div className="CardList">
-      <ul className="List-Tag">
-        {listTags.map((tg, id) => {
-          return (
-            <li key={id} onClick={removeFilter}>
-              {tg}
+      {listTags.length ? (
+        <div className="List-Tag">
+          <ul>
+            {listTags.map((tg, id) => {
+              return (
+                <li className="tag" key={id} onClick={removeFilter}>
+                  <span className="tagname">{tg}</span>
+                </li>
+              );
+            })}
+            <li>
+              <span className="clear" onClick={clearFilter}>
+                Clear
+              </span>
             </li>
-          );
-        })}
-      </ul>
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
       <ul className="List-Card">
         {datas.map((data) => {
           return (
@@ -62,6 +78,7 @@ const CardList = (props) => {
               new={data.new}
               featured={data.featured}
               position={data.position}
+              location={data.location}
               postedAt={data.postedAt}
               contract={data.contract}
               tags={data.tags}

@@ -1,0 +1,160 @@
+.Card {
+  width: 100%;
+  padding: 32px 24px 24px 24px;
+  margin-bottom: 40px;
+  background: var(--white-color);
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media only screen and (min-width: 950px) {
+    height: 152px;
+    padding: 32px 40px;
+    margin-bottom: 24px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &.featured {
+    border-left: 5px solid var(--blue-color);
+  }
+
+  .image {
+    height: 48px;
+    width: 48px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -25px;
+
+    @media only screen and (min-width: 950px) {
+      margin-right: 24px;
+      height: 88px;
+      width: 88px;
+      position: initial;
+    }
+  }
+
+  .content {
+    margin-top: 10px;
+
+    @media only screen and (min-width: 950px) {
+      margin-top: 0;
+    }
+
+    .company {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--blue-color);
+      margin-right: 16px;
+    }
+
+    .new,
+    .featured {
+      color: var(--white-color);
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: -0.0846154px;
+      text-transform: uppercase;
+      padding: 6px 8px 4px 8px;
+      border-radius: 12px;
+      margin-right: 8px;
+    }
+
+    .new {
+      background-color: var(--blue-color);
+    }
+
+    .featured {
+      background-color: var(--black-color);
+    }
+
+    h2 {
+      margin: 20px 0;
+
+      &:hover {
+        color: var(--blue-color);
+        cursor: pointer;
+      }
+
+      @media only screen and (min-width: 950px) {
+        margin: 8px 0;
+      }
+    }
+
+    ul {
+      display: flex;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+
+      @media only screen and (min-width: 950px) {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      li {
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.115385px;
+        color: #7c8f8f;
+
+        &:not(:last-child) {
+          &:after {
+            content: "\2022";
+            margin: 0 8px;
+
+            @media only screen and (min-width: 950px) {
+              margin: 0 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 950px) {
+      margin-left: auto;
+      flex-wrap: nowrap;
+    }
+
+    li {
+      background-color: #eff6f6;
+      color: var(--blue-color);
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      transition: all ease-in 0.2s;
+      margin-bottom: 16px;
+
+      @media only screen and (min-width: 950px) {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        color: #eff6f6;
+        background-color: var(--blue-color);
+      }
+
+      span {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+}

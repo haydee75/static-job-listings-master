@@ -1,0 +1,103 @@
+.CardList {
+  margin-top: 76px;
+  margin-bottom: 96px;
+  position: relative;
+
+  .List-Tag {
+    position: absolute;
+    top: -185px;
+    width: 100%;
+    padding: 0 25px;
+
+    @media only screen and (min-width: 950px) {
+      top: -110px;
+      padding: 0;
+    }
+
+    ul {
+      border-radius: 4px;
+      max-width: 1110px;
+      width: 100%;
+      margin: auto;
+      background-color: var(--white-color);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px;
+
+      @media only screen and (min-width: 950px) {
+        height: 72px;
+        padding: 0 40px;
+      }
+
+      li {
+        cursor: pointer;
+        transition: all ease-in 0.2s;
+        margin-bottom: 15px;
+
+        @media only screen and (min-width: 950px) {
+          margin-bottom: 0;
+        }
+
+        &:not(:last-child) {
+          position: relative;
+          height: 32px;
+          background-color: #eff6f6;
+          color: var(--blue-color);
+          border-radius: 4px;
+          padding: 8px;
+          margin-right: 45px;
+
+          &:after {
+            position: absolute;
+            top: 0;
+            content: "";
+            height: 100%;
+            width: 32px;
+            background: url(../../images/cross-icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: var(--blue-color);
+            color: var(--white-color);
+            border-radius: 0 4px 4px 0;
+            transition: all ease-in 0.2s;
+          }
+
+          &:hover {
+            &:after {
+              background-color: var(--black-color);
+            }
+          }
+
+          span {
+            margin-right: 8px;
+          }
+        }
+
+        &:last-child {
+          margin-left: auto;
+
+          span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--blue-color);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul.List-Card {
+    max-width: 1110px;
+    margin: 120px auto 0;
+    padding: 0 24px;
+
+    @media only screen and (min-width: 950px) {
+      margin: auto;
+    }
+  }
+}
